@@ -1,0 +1,33 @@
+{
+  "name": "dev-blog-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nako68l/dev-blog-back.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Antony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nako68l/dev-blog-back/issues"
+  },
+  "homepage": "https://github.com/Nako68l/dev-blog-back#readme",
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "@types/joi": "^13.4.5",
+    "express": "^4.16.3",
+    "express-validation": "^1.0.2",
+    "joi": "^13.6.0"
+  },
+  "devDependencies": {
+    "tsconfig-paths": "^3.6.0"
+  }
+}
