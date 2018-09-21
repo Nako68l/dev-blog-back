@@ -1,4 +1,4 @@
-import { Router, Request, Response } from "express";
+import { Router, Request, Response, NextFunction } from "express";
 
 import postsRoutes from "posts/posts.route";
 
@@ -12,5 +12,9 @@ router.get('/health-check', (req: Request, res: Response) =>
 );
 
 router.use('/posts', postsRoutes);
+
+router.use((err: any, req: Request, res: Response, next: NextFunction) => {
+    res.status(500).json({ error: err })
+})
 
 export default router;
