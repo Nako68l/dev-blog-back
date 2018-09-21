@@ -20,5 +20,4 @@ const PostsSchema: Schema = new mongoose.Schema({
     },
 })
 
-
 export default mongoose.model('Posts', PostsSchema);
